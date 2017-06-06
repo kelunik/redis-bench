@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clue/php-redis-protocol.git",
-                "reference": "e64c99ecc721903c4b048d83d2149921d4cfc46d"
+                "reference": "9ae947522809a531221db5d4a570496ca11ad0ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-redis-protocol/zipball/e64c99ecc721903c4b048d83d2149921d4cfc46d",
-                "reference": "e64c99ecc721903c4b048d83d2149921d4cfc46d",
+                "url": "https://api.github.com/repos/clue/php-redis-protocol/zipball/9ae947522809a531221db5d4a570496ca11ad0ad",
+                "reference": "9ae947522809a531221db5d4a570496ca11ad0ad",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 "serializer",
                 "streaming"
             ],
-            "time": "2014-05-19 23:02:14"
+            "time": "2017-06-06 11:30:38"
         },
         {
             "name": "kelunik/streaming-resp",
@@ -107,12 +107,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kelunik/streaming-resp.git",
-                "reference": "16259686295a423905702a2b4d307825f158091b"
+                "reference": "c5310852ac68ca48036a93673f76a16b85dd819f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kelunik/streaming-resp/zipball/16259686295a423905702a2b4d307825f158091b",
-                "reference": "16259686295a423905702a2b4d307825f158091b",
+                "url": "https://api.github.com/repos/kelunik/streaming-resp/zipball/c5310852ac68ca48036a93673f76a16b85dd819f",
+                "reference": "c5310852ac68ca48036a93673f76a16b85dd819f",
                 "shasum": ""
             },
             "require": {
@@ -139,7 +139,7 @@
                 }
             ],
             "description": "A streaming RESP parser.",
-            "time": "2017-06-06 05:57:01"
+            "time": "2017-06-06 15:04:07"
         }
     ],
     "packages-dev": [],
