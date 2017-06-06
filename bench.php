@@ -58,14 +58,14 @@ abstract class BenchCase {
     }
 
     public function clueDos() {
-		for ($i = 0; $i < 200; $i++) {
+        for ($i = 0; $i < 200; $i++) {
             $this->push("*10001\r\n" . str_repeat("$1\r\n.\r\n", 1000));
-			$this->push("$");
-			$this->push("1");
-			$this->push("\r");
-			$this->push("\n");
-			$this->push(".");
-			$this->push("\r");
+            $this->push("$");
+            $this->push("1");
+            $this->push("\r");
+            $this->push("\n");
+            $this->push(".");
+            $this->push("\r");
             $this->push("\n");
         }
     }
