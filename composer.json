@@ -1,0 +1,16 @@
+{
+    "name": "kelunik/redis-bench",
+    "description": "Parser benchmarks for various RESP parsers.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niklas Keller",
+            "email": "me@kelunik.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kelunik/streaming-resp": "dev-master",
+        "clue/redis-protocol": "dev-master"
+    }
+}

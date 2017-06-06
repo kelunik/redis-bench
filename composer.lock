@@ -1,0 +1,156 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c6ae259dbd9722790adc09796fbfe469",
+    "packages": [
+        {
+            "name": "amphp/parser",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/parser.git",
+                "reference": "f83e68f03d5b8e8e0365b8792985a7f341c57ae1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/parser/zipball/f83e68f03d5b8e8e0365b8792985a7f341c57ae1",
+                "reference": "f83e68f03d5b8e8e0365b8792985a7f341c57ae1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Amp\\Parser\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                },
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@trowski.com"
+                }
+            ],
+            "description": "A generator parser to make streaming parsers simple.",
+            "homepage": "https://github.com/amphp/parser",
+            "keywords": [
+                "async",
+                "non-blocking",
+                "parser",
+                "stream"
+            ],
+            "time": "2017-06-06T05:29:10+00:00"
+        },
+        {
+            "name": "clue/redis-protocol",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/php-redis-protocol.git",
+                "reference": "e64c99ecc721903c4b048d83d2149921d4cfc46d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/php-redis-protocol/zipball/e64c99ecc721903c4b048d83d2149921d4cfc46d",
+                "reference": "e64c99ecc721903c4b048d83d2149921d4cfc46d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Clue\\Redis\\Protocol": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@lueck.tv"
+                }
+            ],
+            "description": "A streaming redis wire protocol parser and serializer implementation in PHP",
+            "homepage": "https://github.com/clue/php-redis-protocol",
+            "keywords": [
+                "parser",
+                "protocol",
+                "redis",
+                "serializer",
+                "streaming"
+            ],
+            "time": "2014-05-19 23:02:14"
+        },
+        {
+            "name": "kelunik/streaming-resp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kelunik/streaming-resp.git",
+                "reference": "16259686295a423905702a2b4d307825f158091b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kelunik/streaming-resp/zipball/16259686295a423905702a2b4d307825f158091b",
+                "reference": "16259686295a423905702a2b4d307825f158091b",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/parser": "^1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kelunik\\StreamingResp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                }
+            ],
+            "description": "A streaming RESP parser.",
+            "time": "2017-06-06 05:57:01"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "kelunik/streaming-resp": 20,
+        "clue/redis-protocol": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
