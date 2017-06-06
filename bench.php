@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 require "vendor/autoload.php";
 
 function bench(BenchCase $benchCase) {
-    foreach (["simpleString", "bulkString", "simpleArray", "incompleteArray"] as $method) {
+    foreach (["simpleString", "bulkString", "simpleArray", "incompleteArray", "clueDos"] as $method) {
         printf("%s: %f @ %s\n", get_class($benchCase->parser), benchSingle($benchCase, $method), $method);
     }
 }
@@ -53,6 +53,19 @@ abstract class BenchCase {
     public function incompleteArray() {
         for ($i = 0; $i < 1000000; $i++) {
             $this->push("*5\r\n$1\r\nH\r\n$1\r\nH\r\n$1\r\nH\r\n$1\r\nH\r\n:123456789\r");
+            $this->push("\n");
+        }
+    }
+
+    public function clueDos() {
+		for ($i = 0; $i < 200; $i++) {
+            $this->push("*10001\r\n" . str_repeat("$1\r\n.\r\n", 1000));
+			$this->push("$");
+			$this->push("1");
+			$this->push("\r");
+			$this->push("\n");
+			$this->push(".");
+			$this->push("\r");
             $this->push("\n");
         }
     }
